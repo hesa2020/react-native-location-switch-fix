@@ -20,9 +20,10 @@ RCT_REMAP_METHOD(enableLocationService,
     CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
 
     if (![CLLocationManager locationServicesEnabled]) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"App-Prefs:root=Privacy&path=LOCATION"] options:@{}
+        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"App-Prefs:root=Privacy&path=LOCATION"] options:@{}
+                                 //completionHandler:^(BOOL success) {}];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{}
                                  completionHandler:^(BOOL success) {}];
-
     } else if (status == kCLAuthorizationStatusDenied) {
         NSLog(@"Location Services Disabled");
         
