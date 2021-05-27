@@ -1,12 +1,12 @@
 
 Pod::Spec.new do |s|
-  s.name         = "ReactNativeAndroidLocationSwitch"
+  s.name         = "RNReactNativeLocationSwitch"
   s.version      = "1.0.0"
-  s.summary      = "ReactNativeAndroidLocationSwitch"
+  s.summary      = "RNReactNativeLocationSwitch"
   s.description  = <<-DESC
-                  ReactNativeAndroidLocationSwitch
+                  RNReactNativeLocationSwitch
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/hesa2020/react-native-location-switch-fix.git"
   s.license      = "Apache-2.0"
   # s.license      = { :type => "Apache-2.0", :file => "../LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
@@ -20,5 +20,3 @@ Pod::Spec.new do |s|
   #s.dependency "others"
 
 end
-
-  
